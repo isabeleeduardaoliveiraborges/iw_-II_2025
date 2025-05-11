@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>exercicio lampada </title>
+  <style>
+    body {
+      text-align: center;
+      font-family: Arial, sans-serif;
+      margin-top: 50px;
+    }
+    img {
+      width: 200px;
+      margin-bottom: 20px;
+    }
+    button {
+      padding: 10px 20px;
+      margin: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
+    }
+    #ligar {
+      background-color: #ffb4e2;
+      color: rgb(0, 0, 0);
+    }
+    #desligar {
+      background-color: #adb6ff;
+      color: rgb(0, 0, 0);
+    }
+    #estado {
+      font-size: 18px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Acenda e apague a lampada</h1>
+  <img id="lampada" src="img/apagada.jpeg" alt="Lâmpada Desligada">
+  <p id="estado">aperte e veja como a lampada ficara </p>
+  <div>
+    <button id="ligar">Ligar</button>
+    <button id="desligar">Desligar</button>
+  </div>
+  <script src="scriplampada.js"></script>
+</body>
+</html>
