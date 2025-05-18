@@ -3,19 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>exercicio_03</title>
+    <title>Exemplo de Entrada</title>
 </head>
 <body>
-        <input type="text" id="Input">
-        <button onclick="mostrarTexto()">Mostrar Texto</button>
+    
+    <input type="text" id="Input" placeholder="Digite algo aqui">
+    <button onclick="mostrarTexto()">Exibir Mensagem</button>
 
-            <script>
-                function mostrarTexto() {
-                var textlantigo = "";
-                var input = document.getElementById("Input");
-                var textonovo = input.value;
-                alert(textonovo);
-                }
-            </script>
+    <script>
+        function mostrarTexto() {
+            var textoAnterior = "";
+            var entrada = document.getElementById("Input");
+            var textoAtual = entrada.value;
+            alert(textoAtual);
+        }
+    </script>
+
 </body>
 </html>

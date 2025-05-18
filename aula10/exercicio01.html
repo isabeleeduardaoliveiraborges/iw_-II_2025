@@ -5,19 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-    <input type="text" id="caixa" placeholder=" digite um texto" onkeydown="executar()"> 
+<body> 
+    
+    <input type="text" id="caixa" placeholder="digite um texto" onkeyup="executar()">
     <br>
-    <p>texto recebido e <span id="texto"> </span> </p>
+    <p>texto recebido é: <span id="texto"></span> </p>
+
     <script>
         var caixa = document.getElementById("caixa");
         var texto = document.getElementById("texto");
 
+
         function executar(){
-        var lertra = caixa.value;
-       //console.log
-    texto.innerHTML = lertra;
-        } 
+            var letra = caixa.value;
+            //console.log(letra); 
+            texto.innerHTML = letra;
+        }
+
     </script>
+
 </body>
 </html>

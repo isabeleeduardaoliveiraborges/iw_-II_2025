@@ -3,21 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>exercicio_02</title>
+    <title>Confirmação de Exclusão</title>
 </head>
 <body>
-    <button onclick="deletar()">clik pra apagar</button>
+    <button onclick="deletar()">APAGAR ITEM</button>
+
     <script>
         function deletar() {
             let botao = document.getElementById("meuBotao");
-            if (confirm("quer excluir?")) {
-            alert("Item excluído com sucesso!");
+
+            if (confirm("Deseja realmente apagar o item?")) {
+                alert("O item foi apagado com sucesso!");
             } else {
-            alert("Exclusão cancelada.");
+                alert("Ação de exclusão foi cancelada.");
             }
-        botao.onclick = deletar();        
-        }       
+
+            // Linha abaixo removida pois não é necessária:
+            // botao.onclick = deletar();
+        }
     </script>
 </body>
-</html>
 </html>
